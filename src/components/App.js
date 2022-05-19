@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import jwtDecode from 'jwt-decode';
+import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../styles/style.scss';
 import About from './about/About';
@@ -27,6 +27,10 @@ import ShowMessage from './manage/ShowMessage';
 import ArticlesForEditor from './manage/ArticlesForEditor';
 import SessionsByStatus from './sessions/SessionsByStatus';
 import CancelSessionForm from './sessions/CancelSessionForm';
+
+if (process.env.NODE_ENV === 'production') {
+  axios.defaults.baseURL = 'https://accelerate-inc-marco.herokuapp.com/';
+}
 
 const App = () => {
   return (
