@@ -8,7 +8,7 @@ Accelerate Inc is a Full-Stack MERN (MongoDB, Express, React and Node) that we c
 
 This is the repo for the frontend, the backend can be found [here](https://github.com/frozenborder72/accelerate-inc-api)
 
-## The Brief
+## The Brief
 
 - Build a full-stack application by making your own backend and your own front-end.
 - Use an Express API to serve your data from a Mongo database.
